@@ -1,0 +1,34 @@
+<html><body>
+<label>Enter a string:</label><input type="text" name="str" id="str1"><br><br>
+<label>Enter a number:</label><input type="text" name="text1" id="idno1"><br><br>
+<label>Enter power:</label><input type="text" name="text2" id="idno2"><br><br>
+<script language="javascript" type="text/javascript">
+function add()
+{
+var a,b,c,d,e,f,s,sli,sl;
+s=(document.getElementById("str1").value);
+sl=s.length;
+sli=s.slice(5,11);
+a=(document.getElementById("idno1").value);
+b=(document.getElementById("idno2").value);
+c=Math.pow(a,b);
+d=Math.sqrt(a);
+e=Math.ceil(a);
+f=Math.floor(a);
+(document.getElementById("len").value)=sl;
+(document.getElementById("slic").value)=sli;
+(document.getElementById("pow").value)=c;
+(document.getElementById("sqr").value)=d;
+(document.getElementById("cei").value)=e;
+(document.getElementById("floo").value)=f;
+}
+</script>
+<br><br><button onclick="add()">Get Result</button>
+<br><br><label>Length of the string:</label><input type="text" name="leng" id="len">
+<br><br><label>Slice of the string:</label><input type="text" name="sli" id="slic">
+<br><br><label>power of the number:</label><input type="text" name="po" id="pow">
+<br><br><label>Square root of the number:</label><input type="text" name="sqt" id="sqr">
+<br><br><label>Ceil of the number:</label><input type="text" name="leng" id="cei">
+<br><br><label>Floor of the number:</label><input type="text" name="leng" id="floo">
+</body>
+</html>

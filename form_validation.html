@@ -1,0 +1,42 @@
+<html>
+<head><title>Form Validation</title></head>
+<script>
+function validation()
+{
+let x=document.forms["myform"]["fname"].value;
+if(x==""){
+alert("Name must be filled out");
+return false;
+}
+let y=document.forms["myform"]["phone"].value;
+if(y==""){
+alert("Phone must be filled out");
+return false;
+}
+let z=document.forms["myform"]["email"].value;
+if(z==""){
+alert("Email must be filled out");
+return false;
+}
+let a=document.forms["myform"]["pass"].value;
+if(a==""){
+alert("Password must be filled out");
+return false;
+}
+}
+</script>
+</head>
+<body>
+<h2>JavaScript validation</h2>
+<center>
+<h1><u>Registration Form</h1></u>
+<br><br><br>
+<form name="myform" action="#" onsubmit="return validation()">
+Name:<input type="text" name="fname"><br><br>
+Phone:<input type="text" name="phone"><br><br>
+Email:<input type="email" name="email"><br><br>
+Password:<input type="password" name="pass"><br><br>
+<input type="submit" value="Submit">
+<input type="reset"></form>
+<br>
+</body></html>
